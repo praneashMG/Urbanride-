@@ -28,13 +28,15 @@
             }
         }
     </script>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body class="bg-gray-50 text-black font-sans flex flex-col min-h-screen">
     
     
     
     <!-- New Navbar -->
-    <div class="w-full pt-4 px-4 sm:px-6 lg:px-8 absolute top-0 z-50">
+    <div class="w-full pt-4 px-4 sm:px-6 lg:px-8 fixed top-0 z-50">
         <nav class="bg-gray-100 rounded-[50px] shadow-sm flex items-center justify-between px-6 py-3 max-w-[1600px] mx-auto dark:bg-gray-900 transition-colors">
             <!-- Logo -->
             <a href="index.html" class="flex items-center gap-2 flex-shrink-0">
@@ -60,10 +62,8 @@
 
                 <a href="about.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2">ABOUT</a>
                 <a href="fleet.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2">FLEET</a>
-                <a href="bike-detail.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2 whitespace-nowrap">BIKE DETAIL</a>
                 <a href="booking.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2">BOOKING</a>
                 <a href="tours.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2">TOURS</a>
-                <a href="tour-detail.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2 whitespace-nowrap">TOUR DETAIL</a>
                 <a href="locations.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2">LOCATIONS</a>
                 <a href="rules.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2">RULES</a>
                 <a href="experiences.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2">EXPERIENCES</a>
@@ -134,10 +134,8 @@
 
                 <a href="about.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">About Us</a>
                 <a href="fleet.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Fleet</a>
-                <a href="bike-detail.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Bike Detail</a>
                 <a href="booking.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Booking</a>
                 <a href="tours.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Tours</a>
-                <a href="tour-detail.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Tour Detail</a>
                 <a href="locations.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Locations</a>
                 <a href="rules.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Rules</a>
                 <a href="experiences.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Experiences</a>
@@ -204,212 +202,273 @@
 
     <main class="flex-grow">
         
-        <!-- Page Hero Section -->
-        <section class="relative bg-gray-900 text-white py-32 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=2000&fit=crop');">
-            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24">
-                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4 text-white">Book Your Ride</h1>
-                <p class="text-xl max-w-2xl mx-auto text-gray-300">Reserve your bicycle in advance and guarantee your urban adventure.</p>
-            </div>
-        </section>
-        
-        <div class="container mx-auto px-4 py-12 flex justify-center">
-            <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-2xl border-t-4 border-primary">
+       <!-- Section 1: Booking Hero Banner (Mandatory) -->
+<section class="relative h-[60vh] min-h-[400px] pt-24 pb-12 flex items-center justify-center text-center overflow-hidden bg-gray-900">
+    <img src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover z-0 opacity-40 mix-blend-overlay" alt="Booking Hero Background">
+    <div class="relative z-10 px-4 max-w-4xl mx-auto">
+        <span class="block text-secondary font-bold tracking-widest uppercase mb-3 text-sm md:text-base">Secure Your Ride</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 uppercase tracking-tight">Book Your <span class="text-primary">Adventure</span></h1>
+        <p class="text-lg md:text-xl text-gray-300 font-light max-w-2xl mx-auto mb-0">Enter your details below to find real-time availability across all our city hubs. Fast, simple, and secure.</p>
+    </div>
+</section>
+
+<!-- Section 2: Booking Progress Steps -->
+<section class="py-10 bg-gray-50 dark:bg-gray-800 transition-colors border-b border-gray-200 dark:border-gray-700">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center relative">
+            <!-- Connecting Line (Desktop) -->
+            <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gray-200 dark:bg-gray-700 -z-10 transform -translate-y-1/2 rounded"></div>
+            <!-- Active Connecting Line (Partial) -->
+            <div class="hidden md:block absolute top-1/2 left-0 w-1/3 h-1 bg-primary -z-10 transform -translate-y-1/2 rounded"></div>
             
-            <form action="user-dashboard.html" method="GET" class="space-y-6">
+            <!-- Step 1 (Active) -->
+            <div class="flex flex-col items-center mb-6 md:mb-0 bg-gray-50 dark:bg-gray-800 px-4">
+                <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl shadow-md mb-2 border-4 border-gray-50 dark:border-gray-800">1</div>
+                <span class="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wide">Time & Place</span>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="flex flex-col items-center mb-6 md:mb-0 bg-gray-50 dark:bg-gray-800 px-4">
+                <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 flex items-center justify-center font-bold text-xl mb-2 border-4 border-gray-50 dark:border-gray-800">2</div>
+                <span class="text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Select Ride</span>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="flex flex-col items-center mb-6 md:mb-0 bg-gray-50 dark:bg-gray-800 px-4">
+                <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 flex items-center justify-center font-bold text-xl mb-2 border-4 border-gray-50 dark:border-gray-800">3</div>
+                <span class="text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Extras</span>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="flex flex-col items-center bg-gray-50 dark:bg-gray-800 px-4">
+                <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 flex items-center justify-center font-bold text-xl mb-2 border-4 border-gray-50 dark:border-gray-800">4</div>
+                <span class="text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Checkout</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 3: The Search & Filter Form -->
+<section class="py-16 bg-white dark:bg-gray-900 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white dark:bg-gray-800 rounded-[2rem] shadow-xl border border-gray-100 dark:border-gray-700 p-8 md:p-12 relative z-10 transform -translate-y-8">
+            <h2 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-8 border-b border-gray-100 dark:border-gray-700 pb-4">Where and when?</h2>
+            
+            <form class="space-y-8">
+                <!-- Locations -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">Bicycle Type</label>
-                        <select class="w-full border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary p-3 border">
-                            <option>Classic City Bike ($15/day)</option>
-                            <option selected>Electric Bike ($35/day)</option>
-                            <option>Tandem Bike ($25/day)</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">Pickup Location</label>
-                        <select class="w-full border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary p-3 border">
-                            <option>Central Station Hub</option>
-                            <option>North Park Kiosk</option>
-                            <option>Beachfront Rentals</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">Pickup Date</label>
-                        <input type="date" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary p-3 border" required>
-                    </div>
-                    <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">Duration</label>
-                        <select class="w-full border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary p-3 border">
-                            <option>2 Hours</option>
-                            <option>4 Hours</option>
-                            <option>Full Day (8 hrs)</option>
-                            <option>2 Days</option>
-                        </select>
-                    </div>
-                </div>
-                
-                <div class="border-t border-gray-200 pt-6">
-                    <h3 class="text-lg font-bold mb-4">Personal Details</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <input type="text" placeholder="Full Name" class="w-full border-gray-300 rounded-md shadow-sm p-3 border focus:ring-primary focus:border-primary" required>
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wider">Pickup Hub</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><i class="fas fa-map-marker-alt text-primary"></i></div>
+                            <select class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-xl pl-10 pr-10 py-4 focus:outline-none focus:ring-2 focus:ring-secondary appearance-none">
+                                <option value="" disabled selected>Choose a pickup location...</option>
+                                <option>Downtown Central Square</option>
+                                <option>Coastal Boardwalk Hub</option>
+                                <option>Westside Park Entrance</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none"><i class="fas fa-chevron-down text-gray-400 text-xs"></i></div>
                         </div>
-                        <div>
-                            <input type="email" placeholder="Email Address" class="w-full border-gray-300 rounded-md shadow-sm p-3 border focus:ring-primary focus:border-primary" required>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wider">Return Hub</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><i class="fas fa-map-pin text-primary"></i></div>
+                            <select class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-xl pl-10 pr-10 py-4 focus:outline-none focus:ring-2 focus:ring-secondary appearance-none">
+                                <option>Same as pickup location</option>
+                                <option>Downtown Central Square</option>
+                                <option>Coastal Boardwalk Hub</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none"><i class="fas fa-chevron-down text-gray-400 text-xs"></i></div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Dates & Times -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wider">Pickup Date & Time</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><i class="far fa-calendar-alt text-primary"></i></div>
+                            <input type="datetime-local" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-xl pl-10 pr-4 py-4 focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer">
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <label class="text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wider">Return Date & Time</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none"><i class="far fa-calendar-check text-primary"></i></div>
+                            <input type="datetime-local" class="w-full bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-xl pl-10 pr-4 py-4 focus:outline-none focus:ring-2 focus:ring-secondary cursor-pointer">
+                        </div>
+                    </div>
+                </div>
                 
-                <button type="submit" class="w-full bg-secondary text-black font-bold py-3 px-4 rounded-md hover:bg-yellow-500 transition text-lg shadow-md mt-4">
-                    Confirm & Proceed to Payment
-                </button>
+                <div class="pt-4 text-right">
+                    <button type="button" class="bg-primary hover:bg-green-700 text-white font-bold py-4 px-10 rounded-full transition shadow-lg uppercase tracking-wide text-sm w-full md:w-auto flex items-center justify-center gap-2 md:inline-flex">
+                        <i class="fas fa-search"></i> Search Availability
+                    </button>
+                </div>
             </form>
         </div>
-    
-    <!-- Stats Section -->
-    <section class="py-16 bg-primary text-white border-t-4 border-secondary">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div class="p-6 bg-white bg-opacity-10 rounded-2xl transform hover:-translate-y-2 transition duration-300">
-                    <i class="fas fa-users text-3xl mb-4 text-secondary"></i>
-                    <p class="text-4xl font-extrabold text-white mb-2">10k+</p>
-                    <p class="text-xs uppercase tracking-widest font-semibold text-gray-300">Happy Riders</p>
-                </div>
-                <div class="p-6 bg-white bg-opacity-10 rounded-2xl transform hover:-translate-y-2 transition duration-300">
-                    <i class="fas fa-bicycle text-3xl mb-4 text-secondary"></i>
-                    <p class="text-4xl font-extrabold text-white mb-2">50+</p>
-                    <p class="text-xs uppercase tracking-widest font-semibold text-gray-300">Premium Bikes</p>
-                </div>
-                <div class="p-6 bg-white bg-opacity-10 rounded-2xl transform hover:-translate-y-2 transition duration-300">
-                    <i class="fas fa-route text-3xl mb-4 text-secondary"></i>
-                    <p class="text-4xl font-extrabold text-white mb-2">20+</p>
-                    <p class="text-xs uppercase tracking-widest font-semibold text-gray-300">City Routes</p>
-                </div>
-                <div class="p-6 bg-white bg-opacity-10 rounded-2xl transform hover:-translate-y-2 transition duration-300">
-                    <i class="fas fa-star text-3xl mb-4 text-secondary"></i>
-                    <p class="text-4xl font-extrabold text-white mb-2">4.9/5</p>
-                    <p class="text-xs uppercase tracking-widest font-semibold text-gray-300">Average Rating</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Testimonial Section -->
-    <section class="py-24 bg-gray-50 dark:bg-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">Reviews</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">What Our Riders Say</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 relative hover:shadow-2xl transition duration-300">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white text-xl"><i class="fas fa-quote-right"></i></div>
-                    <div class="flex text-secondary mb-6"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="text-gray-600 dark:text-gray-400 mb-8 italic leading-relaxed">"The e-bikes are in perfect condition and the booking process is seamless. Exploring the city has never been this fun! Highly recommended for tourists."</p>
-                    <div class="flex items-center gap-4 border-t border-gray-100 dark:border-gray-800 pt-6">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover">
-                        <div><p class="font-bold text-gray-900 dark:text-white">Michael T.</p><p class="text-xs text-gray-500">Avid Traveler</p></div>
+<!-- Section 4: Available Options (Results) -->
+<section class="py-12 bg-gray-50 dark:bg-gray-800 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center mb-8 border-b border-gray-200 dark:border-gray-700 pb-4">
+            <h3 class="text-2xl font-extrabold text-gray-900 dark:text-white">Available Vehicles</h3>
+            <span class="bg-secondary/20 text-secondary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">2 Options Found</span>
+        </div>
+        
+        <div class="space-y-6">
+            <!-- Result Item 1 -->
+            <div class="bg-white dark:bg-gray-900 rounded-[2rem] p-4 sm:p-6 shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col md:flex-row gap-6 hover:shadow-md transition">
+                <div class="w-full md:w-64 h-48 rounded-xl overflow-hidden flex-shrink-0 bg-gray-100 dark:bg-gray-800 relative">
+                    <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=2070&auto=format&fit=crop" alt="Classic City Cruiser" class="w-full h-full object-cover">
+                    <span class="absolute top-2 left-2 bg-gray-900/80 text-white text-[10px] font-bold px-2 py-1 rounded uppercase backdrop-blur-sm">Standard</span>
+                </div>
+                <div class="flex-grow flex flex-col justify-center">
+                    <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Classic City Cruiser</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">Lightweight aluminum frame, 7-speed gearing, and an upright seating position. Perfect for flat city paths and casual riding.</p>
+                    <div class="flex gap-4 text-xs font-medium text-gray-500 dark:text-gray-400 mb-4 md:mb-0">
+                        <span class="flex items-center gap-1"><i class="fas fa-users text-primary"></i> 1 Person</span>
+                        <span class="flex items-center gap-1"><i class="fas fa-shopping-basket text-primary"></i> Basket Included</span>
                     </div>
                 </div>
-                <div class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 relative hover:shadow-2xl transition duration-300 transform md:-translate-y-4">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white text-xl"><i class="fas fa-quote-right"></i></div>
-                    <div class="flex text-secondary mb-6"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="text-gray-600 dark:text-gray-400 mb-8 italic leading-relaxed">"UrbanRide made our anniversary unforgettable. The tandem bike was a blast and the sunset tour guide was incredibly knowledgeable and friendly."</p>
-                    <div class="flex items-center gap-4 border-t border-gray-100 dark:border-gray-800 pt-6">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover">
-                        <div><p class="font-bold text-gray-900 dark:text-white">Sarah & Mark</p><p class="text-xs text-gray-500">Local Residents</p></div>
+                <div class="flex-shrink-0 flex flex-col justify-center items-end border-t md:border-t-0 md:border-l border-gray-100 dark:border-gray-700 pt-4 md:pt-0 md:pl-6 text-right w-full md:w-auto">
+                    <p class="text-xs text-gray-500 uppercase font-bold mb-1">Total Price</p>
+                    <p class="text-3xl font-extrabold text-gray-900 dark:text-white mb-4">$30<span class="text-sm text-gray-500 font-normal">.00</span></p>
+                    <button class="bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-secondary dark:hover:bg-secondary hover:text-black transition uppercase text-xs tracking-widest w-full">Select</button>
+                </div>
+            </div>
+
+            <!-- Result Item 2 -->
+            <div class="bg-white dark:bg-gray-900 rounded-[2rem] p-4 sm:p-6 shadow-sm border-2 border-secondary flex flex-col md:flex-row gap-6 hover:shadow-md transition relative">
+                <div class="absolute -top-3 left-8 bg-secondary text-gray-900 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-sm">Popular Choice</div>
+                <div class="w-full md:w-64 h-48 rounded-xl overflow-hidden flex-shrink-0 bg-gray-100 dark:bg-gray-800 relative mt-2 md:mt-0">
+                    <img src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?q=80&w=2048&auto=format&fit=crop" alt="Urban E-Bike Pro" class="w-full h-full object-cover">
+                    <span class="absolute top-2 left-2 bg-primary/90 text-white text-[10px] font-bold px-2 py-1 rounded uppercase backdrop-blur-sm"><i class="fas fa-bolt mr-1"></i> Electric</span>
+                </div>
+                <div class="flex-grow flex flex-col justify-center">
+                    <h4 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Urban E-Bike Pro</h4>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">Conquer hills without breaking a sweat. Features a 50-mile range battery, 20mph top assist speed, and hydraulic brakes.</p>
+                    <div class="flex gap-4 text-xs font-medium text-gray-500 dark:text-gray-400 mb-4 md:mb-0">
+                        <span class="flex items-center gap-1"><i class="fas fa-battery-full text-secondary"></i> 50mi Range</span>
+                        <span class="flex items-center gap-1"><i class="fas fa-mobile-alt text-secondary"></i> Phone Mount</span>
                     </div>
                 </div>
-                <div class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 relative hover:shadow-2xl transition duration-300">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white text-xl"><i class="fas fa-quote-right"></i></div>
-                    <div class="flex text-secondary mb-6"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-                    <p class="text-gray-600 dark:text-gray-400 mb-8 italic leading-relaxed">"Incredible value for the daily rates. I rented a classic city bike for a week and it was my best commuting experience ever. Solid customer service."</p>
-                    <div class="flex items-center gap-4 border-t border-gray-100 dark:border-gray-800 pt-6">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover">
-                        <div><p class="font-bold text-gray-900 dark:text-white">David K.</p><p class="text-xs text-gray-500">Business Commuter</p></div>
-                    </div>
+                <div class="flex-shrink-0 flex flex-col justify-center items-end border-t md:border-t-0 md:border-l border-gray-100 dark:border-gray-700 pt-4 md:pt-0 md:pl-6 text-right w-full md:w-auto">
+                    <p class="text-xs text-gray-500 uppercase font-bold mb-1">Total Price</p>
+                    <p class="text-3xl font-extrabold text-primary mb-4">$70<span class="text-sm text-gray-500 font-normal">.00</span></p>
+                    <button class="bg-primary text-white font-bold py-3 px-8 rounded-full hover:bg-green-700 transition uppercase text-xs tracking-widest shadow-md w-full"><i class="fas fa-check mr-2"></i>Selected</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- App Promo Section -->
-    <section class="py-0 bg-white dark:bg-gray-900 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row items-center bg-primary rounded-[3rem] p-10 lg:p-16 relative overflow-hidden shadow-2xl my-16">
-                <!-- decorative blob -->
-                <div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl"></div>
-                <div class="lg:w-1/2 relative z-10 text-center lg:text-left">
-                    <h2 class="text-4xl font-extrabold text-white mb-6">Unlock More with the UrbanRide App</h2>
-                    <p class="text-lg text-green-100 mb-8">Get live interactive maps, one-tap extensions, mobile unlocking, and exclusive rewards. Available for iOS and Android.</p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#" class="bg-black text-white px-6 py-3 rounded-xl flex items-center justify-center gap-3 hover:bg-gray-800 transition">
-                            <i class="fab fa-apple text-2xl"></i>
-                            <div class="text-left"><p class="text-[10px] leading-none">Download on the</p><p class="font-bold text-sm leading-none">App Store</p></div>
-                        </a>
-                        <a href="#" class="bg-black text-white px-6 py-3 rounded-xl flex items-center justify-center gap-3 hover:bg-gray-800 transition">
-                            <i class="fab fa-google-play text-2xl"></i>
-                            <div class="text-left"><p class="text-[10px] leading-none">GET IT ON</p><p class="font-bold text-sm leading-none">Google Play</p></div>
-                        </a>
-                    </div>
+<!-- Section 5: Add-ons & Extras -->
+<section class="py-12 bg-white dark:bg-gray-900 transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h3 class="text-2xl font-extrabold text-gray-900 dark:text-white mb-8 border-b border-gray-100 dark:border-gray-700 pb-4">Enhance Your Ride</h3>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Add-on 1 -->
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-5 border border-gray-200 dark:border-gray-700 flex flex-col h-full">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white rounded-full flex items-center justify-center text-xl"><i class="fas fa-hard-hat"></i></div>
+                    <span class="bg-green-100 text-primary text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Free</span>
                 </div>
-                <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center relative z-10">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=800&fit=crop" class="rounded-[2rem] shadow-2xl border-8 border-gray-900 w-64 h-auto transform rotate-3 hover:rotate-0 transition duration-500" alt="Mobile App">
+                <h4 class="font-bold text-gray-900 dark:text-white mb-1">Safety Helmet</h4>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mb-4 flex-grow">Sanitized, adjustable helmet required for riding.</p>
+                <label class="flex items-center cursor-pointer mt-auto">
+                    <input type="checkbox" checked disabled class="form-checkbox h-5 w-5 text-primary rounded border-gray-300 bg-gray-200 cursor-not-allowed">
+                    <span class="ml-2 text-sm font-bold text-gray-700 dark:text-gray-300">Included</span>
+                </label>
+            </div>
+            
+            <!-- Add-on 2 -->
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-5 border border-gray-200 dark:border-gray-700 flex flex-col h-full">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-white dark:bg-gray-900 text-primary rounded-full flex items-center justify-center text-xl shadow-sm"><i class="fas fa-baby-carriage"></i></div>
+                    <span class="text-gray-900 dark:text-white font-bold text-sm">+$10.00</span>
                 </div>
+                <h4 class="font-bold text-gray-900 dark:text-white mb-1">Rear Child Seat</h4>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mb-4 flex-grow">Secure seating for children up to 40 lbs.</p>
+                <label class="flex items-center cursor-pointer mt-auto group">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-secondary rounded border-gray-300 focus:ring-secondary cursor-pointer">
+                    <span class="ml-2 text-sm font-bold text-gray-700 dark:text-gray-300 group-hover:text-secondary transition">Add to booking</span>
+                </label>
+            </div>
+            
+            <!-- Add-on 3 -->
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-5 border border-gray-200 dark:border-gray-700 flex flex-col h-full">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-white dark:bg-gray-900 text-primary rounded-full flex items-center justify-center text-xl shadow-sm"><i class="fas fa-shield-alt"></i></div>
+                    <span class="text-gray-900 dark:text-white font-bold text-sm">+$5.00</span>
+                </div>
+                <h4 class="font-bold text-gray-900 dark:text-white mb-1">Damage Waiver</h4>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mb-4 flex-grow">Covers accidental cosmetic damage during your rental.</p>
+                <label class="flex items-center cursor-pointer mt-auto group">
+                    <input type="checkbox" class="form-checkbox h-5 w-5 text-secondary rounded border-gray-300 focus:ring-secondary cursor-pointer">
+                    <span class="ml-2 text-sm font-bold text-gray-700 dark:text-gray-300 group-hover:text-secondary transition">Add to booking</span>
+                </label>
+            </div>
+            
+            <!-- Add-on 4 -->
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-2xl p-5 border border-gray-200 dark:border-gray-700 flex flex-col h-full">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white rounded-full flex items-center justify-center text-xl"><i class="fas fa-lock"></i></div>
+                    <span class="bg-green-100 text-primary text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Free</span>
+                </div>
+                <h4 class="font-bold text-gray-900 dark:text-white mb-1">Heavy-Duty U-Lock</h4>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mb-4 flex-grow">Maximum security for stops along your route.</p>
+                <label class="flex items-center cursor-pointer mt-auto">
+                    <input type="checkbox" checked disabled class="form-checkbox h-5 w-5 text-primary rounded border-gray-300 bg-gray-200 cursor-not-allowed">
+                    <span class="ml-2 text-sm font-bold text-gray-700 dark:text-gray-300">Included</span>
+                </label>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- FAQ Section -->
-    <section class="py-24 bg-gray-50 dark:bg-gray-800">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">Support</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Frequently Asked Questions</p>
-            </div>
-            <div class="space-y-6">
-                <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 hover:border-secondary dark:hover:border-secondary transition shadow-sm hover:shadow-md cursor-pointer group">
-                    <h3 class="font-bold text-lg flex justify-between items-center text-gray-900 dark:text-white">
-                        Do I need to wear a helmet? 
-                        <i class="fas fa-plus text-primary group-hover:rotate-45 transition duration-300"></i>
-                    </h3>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4 leading-relaxed">Yes, helmets are provided free of charge at all our kiosks and hubs. For your safety and to comply with local regulations, they are mandatory for all riders.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 hover:border-secondary dark:hover:border-secondary transition shadow-sm hover:shadow-md cursor-pointer group">
-                    <h3 class="font-bold text-lg flex justify-between items-center text-gray-900 dark:text-white">
-                        What happens if the bike gets a flat tire? 
-                        <i class="fas fa-plus text-primary group-hover:rotate-45 transition duration-300"></i>
-                    </h3>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4 leading-relaxed">We offer free roadside assistance for active rentals. Simply tap "Report Issue" in your dashboard or call our support line, and our rapid-response van will swap your bike within 30 minutes.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 hover:border-secondary dark:hover:border-secondary transition shadow-sm hover:shadow-md cursor-pointer group">
-                    <h3 class="font-bold text-lg flex justify-between items-center text-gray-900 dark:text-white">
-                        How does the security deposit work? 
-                        <i class="fas fa-plus text-primary group-hover:rotate-45 transition duration-300"></i>
-                    </h3>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4 leading-relaxed">A pre-authorization is placed on your card when you pick up the bike ($50 for City, $200 for E-Bike). It is automatically voided the moment the bike is returned securely to one of our locations.</p>
+<!-- Section 6: Authentication & Checkout CTA -->
+<section class="py-16 bg-primary transition-colors border-t-4 border-secondary">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white dark:bg-gray-800 rounded-[2rem] p-8 md:p-12 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-10">
+            
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h3 class="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white mb-4">Ready to complete your booking?</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-6">Log in to apply member discounts and save your ride history, or continue as a new user to create your account instantly.</p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="register.html" class="bg-secondary text-gray-900 font-bold px-8 py-4 rounded-full hover:bg-yellow-500 transition shadow-lg text-center uppercase tracking-wide text-sm">Create a account</a>
+                    <a href="login.html" class="bg-gray-900 dark:bg-gray-700 text-white font-bold px-8 py-4 rounded-full hover:bg-gray-800 dark:hover:bg-gray-600 transition shadow-lg text-center uppercase tracking-wide text-sm">Already have and account</a>
                 </div>
             </div>
-        </div>
-    </section>
+            
+            <div class="lg:w-1/3 w-full bg-gray-50 dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+                <h4 class="text-sm font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-4 pb-2 border-b border-gray-200 dark:border-gray-700">Order Summary</h4>
+                <div class="flex justify-between text-sm text-gray-700 dark:text-gray-300 mb-2">
+                    <span>1x Urban E-Bike Pro (2 Days)</span>
+                    <span class="font-medium">$70.00</span>
+                </div>
+                <div class="flex justify-between text-sm text-gray-700 dark:text-gray-300 mb-4">
+                    <span>Taxes & Fees</span>
+                    <span class="font-medium">$5.60</span>
+                </div>
+                <div class="flex justify-between items-center border-t border-gray-200 dark:border-gray-700 pt-4 mt-2">
+                    <span class="font-bold text-gray-900 dark:text-white">Total Due Now</span>
+                    <span class="text-2xl font-extrabold text-primary">$75.60</span>
+                </div>
+                <p class="text-[10px] text-gray-500 mt-4 text-center">*$200 Security deposit will be held upon pickup.</p>
+            </div>
 
-    <!-- Newsletter & CTA -->
-    <section class="py-24 bg-gray-900 text-white relative overflow-hidden">
-        <div class="absolute inset-0 z-0 opacity-20">
-            <img src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?w=2000&auto=format&fit=crop" class="w-full h-full object-cover" alt="Cycling Background">
-            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
         </div>
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <i class="fas fa-paper-plane text-5xl text-secondary mb-6"></i>
-            <h2 class="text-4xl font-bold mb-4">Stay in the Loop</h2>
-            <p class="text-gray-300 mb-10 text-lg">Subscribe to our newsletter for exclusive discounts, new tour announcements, and urban cycling tips delivered straight to your inbox.</p>
-            <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-                <input type="email" placeholder="Enter your email address..." class="flex-grow px-6 py-4 rounded-full text-gray-900 focus:outline-none focus:ring-4 focus:ring-secondary text-lg" required>
-                <button type="submit" class="bg-secondary text-gray-900 font-bold px-10 py-4 rounded-full hover:bg-yellow-500 transition shadow-lg text-lg transform hover:-translate-y-1">Subscribe</button>
-            </form>
-        </div>
-    </section>
+    </div>
+</section>
 
     </main>
     
@@ -534,3 +593,7 @@
 
 </body>
 </html>
+
+
+
+

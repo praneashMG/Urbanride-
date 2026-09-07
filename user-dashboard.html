@@ -19,29 +19,36 @@
             }
         }
     </script>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 font-sans transition-colors overflow-hidden h-screen flex flex-col text-gray-800 dark:text-gray-200">
 
     <!-- Top Header -->
-    <header class="h-16 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 flex items-center justify-between px-6 z-20 flex-shrink-0 transition-colors">
-        <a href="index.html" class="flex items-center gap-2">
-            <i class="fas fa-bicycle text-primary text-2xl"></i>
-            <span class="text-xl font-medium tracking-widest text-gray-900 dark:text-white uppercase">URBAN<span class="text-primary font-bold">RIDE</span></span>
-        </a>
-        <div class="flex items-center gap-3">
-            <button onclick="document.body.classList.toggle('rtl'); document.documentElement.setAttribute('dir', document.body.classList.contains('rtl') ? 'rtl' : 'ltr')" class="bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-[10px] font-bold px-3 py-1.5 rounded border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition shadow-sm uppercase tracking-widest">
+        <header class="h-16 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 flex items-center justify-between px-3 sm:px-6 z-20 flex-shrink-0 transition-colors">
+        <div class="flex items-center gap-2 sm:gap-4">
+            <button id="mobile-menu-btn" class="md:hidden text-gray-700 dark:text-gray-300 p-2 focus:outline-none">
+                <i class="fas fa-bars text-lg"></i>
+            </button>
+            <a href="index.html" class="flex items-center gap-1 sm:gap-2">
+                <i class="fas fa-bicycle text-secondary text-xl sm:text-2xl"></i>
+                <span class="text-lg sm:text-xl font-bold tracking-wider text-gray-900 dark:text-white uppercase">URBAN<span class="text-secondary">RIDE</span></span>
+            </a>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-3">
+            <button onclick="document.body.classList.toggle('rtl'); document.documentElement.setAttribute('dir', document.body.classList.contains('rtl') ? 'rtl' : 'ltr')" class="bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-[10px] font-bold px-2 py-1.5 sm:px-3 rounded border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition shadow-sm uppercase tracking-widest hidden min-[360px]:block">
                 RTL
             </button>
-            <button onclick="document.documentElement.classList.toggle('dark')" class="bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 w-8 h-8 rounded flex items-center justify-center border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition shadow-sm">
+            <button onclick="document.documentElement.classList.toggle('dark')" class="bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 w-7 h-7 sm:w-8 sm:h-8 rounded flex items-center justify-center border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 transition shadow-sm">
                 <i class="fas fa-moon text-[10px]"></i>
             </button>
-            <div class="flex items-center gap-3 border-l border-gray-200 dark:border-gray-700 pl-4 ml-2">
+            <div class="flex items-center gap-2 sm:gap-3 border-l border-gray-200 dark:border-gray-700 pl-2 sm:pl-4 ml-1 sm:ml-2">
                 <div class="text-right hidden sm:block">
                     <p class="text-xs font-bold text-gray-900 dark:text-white leading-none mb-1">RIDER PROFILE</p>
                     <p class="text-[10px] text-primary font-bold leading-none tracking-widest">ACTIVE MEMBER</p>
                 </div>
-                <div class="w-8 h-8 rounded-full bg-green-50 dark:bg-gray-800 flex items-center justify-center text-primary border border-green-100 dark:border-gray-700">
-                    <i class="fas fa-user text-sm"></i>
+                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-green-50 dark:bg-gray-800 flex items-center justify-center text-primary border border-green-100 dark:border-gray-700">
+                    <i class="fas fa-shield-alt sm:text-sm text-xs"></i>
                 </div>
             </div>
         </div>
@@ -50,8 +57,18 @@
     <!-- Main Layout -->
     <div class="flex flex-1 overflow-hidden">
         <!-- Sidebar -->
-        <aside class="w-56 lg:w-64 bg-gray-50 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 flex-col justify-between py-6 hidden md:flex transition-colors">
+        <aside id="dashboard-sidebar" class="w-56 lg:w-64 bg-gray-50 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 flex flex-col justify-between py-6 fixed md:relative top-0 left-0 z-50 md:z-0 h-full shadow-2xl md:shadow-none transform -translate-x-full md:translate-x-0 transition-transform duration-300">
             <div class="pr-4">
+                <!-- Mobile Logo in Sidebar -->
+                <div class="md:hidden flex items-center justify-between px-4 mt-2 mb-6 border-b border-gray-200 dark:border-gray-800 pb-4">
+                    <div class="flex items-center gap-1.5 flex-shrink-0">
+                        <i class="fas fa-bicycle text-secondary text-xl"></i>
+                        <span class="text-lg font-bold tracking-wider text-gray-900 dark:text-white uppercase">URBAN<span class="text-secondary">RIDE</span></span>
+                    </div>
+                    <button id="close-sidebar-btn" class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-900/30 transition-colors focus:outline-none flex-shrink-0 ml-1">
+                        <i class="fas fa-times text-sm"></i>
+                    </button>
+                </div>
                 <h3 class="text-[10px] font-bold text-gray-400 dark:text-gray-500 tracking-widest uppercase mb-4 pl-6">Management</h3>
                 <nav class="space-y-1">
                     <a href="#" data-tab="tab-overview" class="nav-link flex items-center px-6 py-3 bg-green-50 dark:bg-green-900 text-primary dark:text-green-400 border-l-4 border-primary rounded-r-lg font-bold text-sm transition-colors">
@@ -86,8 +103,8 @@
             <div id="tab-overview" class="tab-pane">
                 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8 gap-4">
                     <div>
-                        <h1 class="text-3xl font-medium text-gray-900 dark:text-white mb-1">COMMAND CENTER</h1>
-                        <p class="text-xs font-bold text-gray-400 dark:text-gray-500 tracking-widest uppercase">Your Personal Cycling Dashboard.</p>
+                        <h1 class="text-3xl font-medium text-gray-900 dark:text-white mb-1">Welcome back, John!</h1>
+                        <p class="text-xs font-bold text-gray-400 dark:text-gray-500 tracking-widest uppercase">Command Center &bull; Your Personal Cycling Dashboard.</p>
                     </div>
                     <button class="bg-primary hover:bg-green-700 text-white font-bold text-xs uppercase tracking-widest px-6 py-3 rounded-full shadow-md transition flex items-center gap-2">
                         <i class="fas fa-bicycle"></i> New Booking
@@ -317,5 +334,26 @@
             });
         });
     </script>
+    <!-- Mobile Sidebar Overlay -->
+    <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden md:hidden"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-btn');
+            const sidebar = document.getElementById('dashboard-sidebar');
+            const overlay = document.getElementById('sidebar-overlay');
+            const closeBtn = document.getElementById('close-sidebar-btn');
+
+            if (btn && sidebar && overlay) {
+                function toggleSidebar() {
+                    sidebar.classList.toggle('-translate-x-full');
+                    overlay.classList.toggle('hidden');
+                }
+                btn.addEventListener('click', toggleSidebar);
+                if(closeBtn) closeBtn.addEventListener('click', toggleSidebar);
+                overlay.addEventListener('click', toggleSidebar);
+            }
+        });
+    </script>
 </body>
 </html>
+

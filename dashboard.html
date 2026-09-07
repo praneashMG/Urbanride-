@@ -20,13 +20,15 @@
             }
         }
     </script>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
     
     
     
     <!-- New Navbar -->
-    <div class="w-full pt-4 px-4 sm:px-6 lg:px-8 absolute top-0 z-50">
+    <div class="w-full pt-4 px-4 sm:px-6 lg:px-8 fixed top-0 z-50">
         <nav class="bg-gray-100 rounded-[50px] shadow-sm flex items-center justify-between px-6 py-3 max-w-[1600px] mx-auto dark:bg-gray-900 transition-colors">
             <!-- Logo -->
             <a href="index.html" class="flex items-center gap-2 flex-shrink-0">
@@ -52,10 +54,8 @@
 
                 <a href="about.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2">ABOUT</a>
                 <a href="fleet.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2">FLEET</a>
-                <a href="bike-detail.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2 whitespace-nowrap">BIKE DETAIL</a>
                 <a href="booking.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2">BOOKING</a>
                 <a href="tours.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2">TOURS</a>
-                <a href="tour-detail.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2 whitespace-nowrap">TOUR DETAIL</a>
                 <a href="locations.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2">LOCATIONS</a>
                 <a href="rules.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2">RULES</a>
                 <a href="experiences.html" class="flex-shrink-0 text-xs font-bold text-gray-700 dark:text-gray-300 uppercase hover:text-secondary transition py-2">EXPERIENCES</a>
@@ -126,10 +126,8 @@
 
                 <a href="about.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">About Us</a>
                 <a href="fleet.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Fleet</a>
-                <a href="bike-detail.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Bike Detail</a>
                 <a href="booking.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Booking</a>
                 <a href="tours.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Tours</a>
-                <a href="tour-detail.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Tour Detail</a>
                 <a href="locations.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Locations</a>
                 <a href="rules.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Rules</a>
                 <a href="experiences.html" class="block text-sm font-bold text-gray-800 dark:text-gray-200 uppercase border-b border-gray-200 dark:border-gray-800 pb-3 hover:text-secondary transition">Experiences</a>
@@ -345,121 +343,124 @@
         </div>
     </section>
 
-    <!-- Testimonial Section -->
-    <section class="py-24 bg-gray-50 dark:bg-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">Reviews</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">What Our Riders Say</p>
+        <!-- Shared Sections -->
+    <div id="shared-impressive-sections">
+        <!-- Testimonial Section -->
+        <section class="py-12 md:py-24 bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10 md:mb-16">
+                    <h2 class="text-sm md:text-base text-primary font-semibold tracking-wide uppercase">Reviews</h2>
+                    <p class="mt-2 text-2xl md:text-4xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white">What Our Riders Say</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+                    <div class="bg-white dark:bg-gray-900 p-6 md:p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 relative hover:shadow-2xl transition duration-300">
+                        <div class="fixed top-0 right-0 -mt-3 -mr-3 md:-mt-4 md:-mr-4 w-10 h-10 md:w-12 md:h-12 bg-secondary rounded-full flex items-center justify-center text-white text-lg md:text-xl"><i class="fas fa-quote-right"></i></div>
+                        <div class="flex text-secondary mb-4 md:mb-6"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6 md:mb-8 italic leading-relaxed text-sm md:text-base">"The e-bikes are in perfect condition and the booking process is seamless. Exploring the city has never been this fun! Highly recommended for tourists."</p>
+                        <div class="flex items-center gap-4 border-t border-gray-100 dark:border-gray-800 pt-4 md:pt-6">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover">
+                            <div><p class="font-bold text-gray-900 dark:text-white text-sm md:text-base">Michael T.</p><p class="text-xs text-gray-500">Avid Traveler</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-6 md:p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 relative hover:shadow-2xl transition duration-300 transform lg:-translate-y-4">
+                        <div class="fixed top-0 right-0 -mt-3 -mr-3 md:-mt-4 md:-mr-4 w-10 h-10 md:w-12 md:h-12 bg-secondary rounded-full flex items-center justify-center text-white text-lg md:text-xl"><i class="fas fa-quote-right"></i></div>
+                        <div class="flex text-secondary mb-4 md:mb-6"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6 md:mb-8 italic leading-relaxed text-sm md:text-base">"UrbanRide made our anniversary unforgettable. The tandem bike was a blast and the sunset tour guide was incredibly knowledgeable and friendly."</p>
+                        <div class="flex items-center gap-4 border-t border-gray-100 dark:border-gray-800 pt-4 md:pt-6">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover">
+                            <div><p class="font-bold text-gray-900 dark:text-white text-sm md:text-base">Sarah & Mark</p><p class="text-xs text-gray-500">Local Residents</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-6 md:p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 relative hover:shadow-2xl transition duration-300">
+                        <div class="fixed top-0 right-0 -mt-3 -mr-3 md:-mt-4 md:-mr-4 w-10 h-10 md:w-12 md:h-12 bg-secondary rounded-full flex items-center justify-center text-white text-lg md:text-xl"><i class="fas fa-quote-right"></i></div>
+                        <div class="flex text-secondary mb-4 md:mb-6"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6 md:mb-8 italic leading-relaxed text-sm md:text-base">"Incredible value for the daily rates. I rented a classic city bike for a week and it was my best commuting experience ever. Solid customer service."</p>
+                        <div class="flex items-center gap-4 border-t border-gray-100 dark:border-gray-800 pt-4 md:pt-6">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" class="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover">
+                            <div><p class="font-bold text-gray-900 dark:text-white text-sm md:text-base">David K.</p><p class="text-xs text-gray-500">Business Commuter</p></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                <div class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 relative hover:shadow-2xl transition duration-300">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white text-xl"><i class="fas fa-quote-right"></i></div>
-                    <div class="flex text-secondary mb-6"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="text-gray-600 dark:text-gray-400 mb-8 italic leading-relaxed">"The e-bikes are in perfect condition and the booking process is seamless. Exploring the city has never been this fun! Highly recommended for tourists."</p>
-                    <div class="flex items-center gap-4 border-t border-gray-100 dark:border-gray-800 pt-6">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover">
-                        <div><p class="font-bold text-gray-900 dark:text-white">Michael T.</p><p class="text-xs text-gray-500">Avid Traveler</p></div>
-                    </div>
-                </div>
-                <div class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 relative hover:shadow-2xl transition duration-300 transform md:-translate-y-4">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white text-xl"><i class="fas fa-quote-right"></i></div>
-                    <div class="flex text-secondary mb-6"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="text-gray-600 dark:text-gray-400 mb-8 italic leading-relaxed">"UrbanRide made our anniversary unforgettable. The tandem bike was a blast and the sunset tour guide was incredibly knowledgeable and friendly."</p>
-                    <div class="flex items-center gap-4 border-t border-gray-100 dark:border-gray-800 pt-6">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover">
-                        <div><p class="font-bold text-gray-900 dark:text-white">Sarah & Mark</p><p class="text-xs text-gray-500">Local Residents</p></div>
-                    </div>
-                </div>
-                <div class="bg-white dark:bg-gray-900 p-8 rounded-3xl shadow-lg border border-gray-100 dark:border-gray-700 relative hover:shadow-2xl transition duration-300">
-                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white text-xl"><i class="fas fa-quote-right"></i></div>
-                    <div class="flex text-secondary mb-6"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-                    <p class="text-gray-600 dark:text-gray-400 mb-8 italic leading-relaxed">"Incredible value for the daily rates. I rented a classic city bike for a week and it was my best commuting experience ever. Solid customer service."</p>
-                    <div class="flex items-center gap-4 border-t border-gray-100 dark:border-gray-800 pt-6">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover">
-                        <div><p class="font-bold text-gray-900 dark:text-white">David K.</p><p class="text-xs text-gray-500">Business Commuter</p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- App Promo Section -->
-    <section class="py-0 bg-white dark:bg-gray-900 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row items-center bg-primary rounded-[3rem] p-10 lg:p-16 relative overflow-hidden shadow-2xl my-16">
-                <!-- decorative blob -->
-                <div class="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl"></div>
-                <div class="lg:w-1/2 relative z-10 text-center lg:text-left">
-                    <h2 class="text-4xl font-extrabold text-white mb-6">Unlock More with the UrbanRide App</h2>
-                    <p class="text-lg text-green-100 mb-8">Get live interactive maps, one-tap extensions, mobile unlocking, and exclusive rewards. Available for iOS and Android.</p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="#" class="bg-black text-white px-6 py-3 rounded-xl flex items-center justify-center gap-3 hover:bg-gray-800 transition">
-                            <i class="fab fa-apple text-2xl"></i>
-                            <div class="text-left"><p class="text-[10px] leading-none">Download on the</p><p class="font-bold text-sm leading-none">App Store</p></div>
-                        </a>
-                        <a href="#" class="bg-black text-white px-6 py-3 rounded-xl flex items-center justify-center gap-3 hover:bg-gray-800 transition">
-                            <i class="fab fa-google-play text-2xl"></i>
-                            <div class="text-left"><p class="text-[10px] leading-none">GET IT ON</p><p class="font-bold text-sm leading-none">Google Play</p></div>
-                        </a>
+        <!-- App Promo Section -->
+        <section class="py-0 bg-white dark:bg-gray-900 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center bg-primary rounded-[2rem] md:rounded-[3rem] p-8 md:p-10 lg:p-16 relative overflow-hidden shadow-2xl my-8 md:my-16">
+                    <div class="fixed top-0 right-0 -mt-10 -mr-10 md:-mt-20 md:-mr-20 w-40 h-40 md:w-80 md:h-80 bg-white opacity-10 rounded-full blur-2xl md:blur-3xl"></div>
+                    <div class="lg:w-1/2 relative z-10 text-center lg:text-left">
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4 md:mb-6">Unlock More with the UrbanRide App</h2>
+                        <p class="text-base md:text-lg text-green-100 mb-6 md:mb-8">Get live interactive maps, one-tap extensions, mobile unlocking, and exclusive rewards. Available for iOS and Android.</p>
+                        <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
+                            <a href="#" class="bg-black text-white px-5 py-3 md:px-6 md:py-3 rounded-xl flex items-center justify-center gap-3 hover:bg-gray-800 transition w-full sm:w-auto">
+                                <i class="fab fa-apple text-xl md:text-2xl"></i>
+                                <div class="text-left"><p class="text-[9px] md:text-[10px] leading-none">Download on the</p><p class="font-bold text-xs md:text-sm leading-none">App Store</p></div>
+                            </a>
+                            <a href="#" class="bg-black text-white px-5 py-3 md:px-6 md:py-3 rounded-xl flex items-center justify-center gap-3 hover:bg-gray-800 transition w-full sm:w-auto">
+                                <i class="fab fa-google-play text-xl md:text-2xl"></i>
+                                <div class="text-left"><p class="text-[9px] md:text-[10px] leading-none">GET IT ON</p><p class="font-bold text-xs md:text-sm leading-none">Google Play</p></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 mt-10 md:mt-12 lg:mt-0 flex justify-center relative z-10 w-full">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=800&fit=crop" class="rounded-2xl md:rounded-[2rem] shadow-2xl border-4 md:border-8 border-gray-900 w-48 md:w-64 h-auto transform rotate-0 lg:rotate-3 hover:rotate-0 transition duration-500" alt="Mobile App">
                     </div>
                 </div>
-                <div class="lg:w-1/2 mt-12 lg:mt-0 flex justify-center relative z-10">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=800&fit=crop" class="rounded-[2rem] shadow-2xl border-8 border-gray-900 w-64 h-auto transform rotate-3 hover:rotate-0 transition duration-500" alt="Mobile App">
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- FAQ Section -->
-    <section class="py-24 bg-gray-50 dark:bg-gray-800">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-base text-primary font-semibold tracking-wide uppercase">Support</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Frequently Asked Questions</p>
+        <!-- FAQ Section -->
+        <section class="py-12 md:py-24 bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-10 md:mb-16">
+                    <h2 class="text-sm md:text-base text-primary font-semibold tracking-wide uppercase">Support</h2>
+                    <p class="mt-2 text-2xl md:text-4xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white">Frequently Asked Questions</p>
+                </div>
+                <div class="space-y-4 md:space-y-6">
+                    <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl md:rounded-2xl p-5 md:p-6 hover:border-secondary dark:hover:border-secondary transition shadow-sm hover:shadow-md cursor-pointer group">
+                        <h3 class="font-bold text-base md:text-lg flex justify-between items-center text-gray-900 dark:text-white">
+                            Do I need to wear a helmet? 
+                            <i class="fas fa-plus text-primary group-hover:rotate-45 transition duration-300"></i>
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 mt-3 md:mt-4 leading-relaxed text-sm md:text-base hidden group-hover:block transition-all">Yes, helmets are provided free of charge at all our kiosks and hubs. For your safety and to comply with local regulations, they are mandatory for all riders.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl md:rounded-2xl p-5 md:p-6 hover:border-secondary dark:hover:border-secondary transition shadow-sm hover:shadow-md cursor-pointer group">
+                        <h3 class="font-bold text-base md:text-lg flex justify-between items-center text-gray-900 dark:text-white">
+                            What happens if the bike gets a flat tire? 
+                            <i class="fas fa-plus text-primary group-hover:rotate-45 transition duration-300"></i>
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 mt-3 md:mt-4 leading-relaxed text-sm md:text-base hidden group-hover:block transition-all">We offer free roadside assistance for active rentals. Simply tap "Report Issue" in your dashboard or call our support line, and our rapid-response van will swap your bike within 30 minutes.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl md:rounded-2xl p-5 md:p-6 hover:border-secondary dark:hover:border-secondary transition shadow-sm hover:shadow-md cursor-pointer group">
+                        <h3 class="font-bold text-base md:text-lg flex justify-between items-center text-gray-900 dark:text-white">
+                            How does the security deposit work? 
+                            <i class="fas fa-plus text-primary group-hover:rotate-45 transition duration-300"></i>
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 mt-3 md:mt-4 leading-relaxed text-sm md:text-base hidden group-hover:block transition-all">A pre-authorization is placed on your card when you pick up the bike ($50 for City, $200 for E-Bike). It is automatically voided the moment the bike is returned securely to one of our locations.</p>
+                    </div>
+                </div>
             </div>
-            <div class="space-y-6">
-                <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 hover:border-secondary dark:hover:border-secondary transition shadow-sm hover:shadow-md cursor-pointer group">
-                    <h3 class="font-bold text-lg flex justify-between items-center text-gray-900 dark:text-white">
-                        Do I need to wear a helmet? 
-                        <i class="fas fa-plus text-primary group-hover:rotate-45 transition duration-300"></i>
-                    </h3>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4 leading-relaxed">Yes, helmets are provided free of charge at all our kiosks and hubs. For your safety and to comply with local regulations, they are mandatory for all riders.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 hover:border-secondary dark:hover:border-secondary transition shadow-sm hover:shadow-md cursor-pointer group">
-                    <h3 class="font-bold text-lg flex justify-between items-center text-gray-900 dark:text-white">
-                        What happens if the bike gets a flat tire? 
-                        <i class="fas fa-plus text-primary group-hover:rotate-45 transition duration-300"></i>
-                    </h3>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4 leading-relaxed">We offer free roadside assistance for active rentals. Simply tap "Report Issue" in your dashboard or call our support line, and our rapid-response van will swap your bike within 30 minutes.</p>
-                </div>
-                <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl p-6 hover:border-secondary dark:hover:border-secondary transition shadow-sm hover:shadow-md cursor-pointer group">
-                    <h3 class="font-bold text-lg flex justify-between items-center text-gray-900 dark:text-white">
-                        How does the security deposit work? 
-                        <i class="fas fa-plus text-primary group-hover:rotate-45 transition duration-300"></i>
-                    </h3>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4 leading-relaxed">A pre-authorization is placed on your card when you pick up the bike ($50 for City, $200 for E-Bike). It is automatically voided the moment the bike is returned securely to one of our locations.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Newsletter & CTA -->
-    <section class="py-24 bg-gray-900 text-white relative overflow-hidden">
-        <div class="absolute inset-0 z-0 opacity-20">
-            <img src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?w=2000&auto=format&fit=crop" class="w-full h-full object-cover" alt="Cycling Background">
-            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-        </div>
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <i class="fas fa-paper-plane text-5xl text-secondary mb-6"></i>
-            <h2 class="text-4xl font-bold mb-4">Stay in the Loop</h2>
-            <p class="text-gray-300 mb-10 text-lg">Subscribe to our newsletter for exclusive discounts, new tour announcements, and urban cycling tips delivered straight to your inbox.</p>
-            <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-                <input type="email" placeholder="Enter your email address..." class="flex-grow px-6 py-4 rounded-full text-gray-900 focus:outline-none focus:ring-4 focus:ring-secondary text-lg" required>
-                <button type="submit" class="bg-secondary text-gray-900 font-bold px-10 py-4 rounded-full hover:bg-yellow-500 transition shadow-lg text-lg transform hover:-translate-y-1">Subscribe</button>
-            </form>
-        </div>
-    </section>
+        <!-- Newsletter & CTA -->
+        <section class="py-16 md:py-24 bg-gray-900 text-white relative overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-20">
+                <img src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?w=2000&auto=format&fit=crop" class="w-full h-full object-cover" alt="Cycling Background">
+                <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            </div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <i class="fas fa-paper-plane text-4xl md:text-5xl text-secondary mb-4 md:mb-6"></i>
+                <h2 class="text-3xl md:text-4xl font-bold mb-3 md:mb-4">Stay in the Loop</h2>
+                <p class="text-gray-300 mb-8 md:mb-10 text-base md:text-lg px-2">Subscribe to our newsletter for exclusive discounts, new tour announcements, and urban cycling tips delivered straight to your inbox.</p>
+                <form class="flex flex-col sm:flex-row gap-3 md:gap-4 max-w-xl mx-auto w-full">
+                    <input type="email" placeholder="Enter your email address..." class="flex-grow px-5 py-3 md:px-6 md:py-4 rounded-full text-gray-900 focus:outline-none focus:ring-4 focus:ring-secondary text-base md:text-lg w-full" required>
+                    <button type="submit" class="bg-secondary text-gray-900 font-bold px-8 py-3 md:px-10 md:py-4 rounded-full hover:bg-yellow-500 transition shadow-lg text-base md:text-lg transform hover:-translate-y-1 w-full sm:w-auto mt-2 sm:mt-0">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
 
     </main>
     
@@ -584,3 +585,7 @@
 
 </body>
 </html>
+
+
+
+
