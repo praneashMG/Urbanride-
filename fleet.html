@@ -202,18 +202,13 @@
 
     <main class="flex-grow">
       <!-- Section 1: Fleet Hero Banner -->
-<section class="relative pt-32 pb-24 flex items-center justify-center text-center overflow-hidden bg-gray-900">
+<section class="relative pt-32 pb-24 flex flex-col items-center justify-center text-center overflow-hidden bg-gray-900 w-full">
     <img src="assets/e11.jpg" class="absolute inset-0 w-full h-full object-cover z-0 opacity-40 mix-blend-overlay" alt="Bicycles lined up">
-    <div class="relative z-10 px-4 max-w-4xl mx-auto">
-        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 uppercase tracking-tight">Our Premium <span class="text-secondary">Fleet</span></h1>
-        <p class="text-lg md:text-xl text-gray-300 font-light max-w-2xl mx-auto mb-8">From nimble city cruisers to high-performance e-bikes, every ride is meticulously maintained and ready for your next urban adventure.</p>
-        <!-- Quick search/filter bar -->
-        <div class="bg-white/10 backdrop-blur-md p-2 rounded-full inline-flex border border-white/20 shadow-xl max-w-full overflow-x-auto">
-            <button class="bg-primary text-white font-bold py-2 px-6 rounded-full text-sm uppercase tracking-wider whitespace-nowrap">All Bikes</button>
-            <button class="text-white hover:text-secondary font-bold py-2 px-6 rounded-full text-sm uppercase tracking-wider transition whitespace-nowrap">City Cruisers</button>
-            <button class="text-white hover:text-secondary font-bold py-2 px-6 rounded-full text-sm uppercase tracking-wider transition whitespace-nowrap">E-Bikes</button>
-            <button class="text-white hover:text-secondary font-bold py-2 px-6 rounded-full text-sm uppercase tracking-wider transition whitespace-nowrap">Specialty</button>
-        </div>
+    <div class="relative z-10 px-4 md:px-8 w-full max-w-4xl mx-auto flex flex-col items-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 uppercase tracking-tight w-full">Our Premium <span class="text-secondary">Fleet</span></h1>
+        <p class="text-lg md:text-xl text-gray-300 font-light max-w-2xl mx-auto mb-8 w-full">From nimble city cruisers to high-performance e-bikes, every ride is meticulously maintained and ready for your next urban adventure.</p>
+        
+        
     </div>
 </section>
 
@@ -240,7 +235,7 @@
                         <p class="text-xs text-gray-500 uppercase font-bold">Starting at</p>
                         <p class="text-xl font-extrabold text-primary">$15<span class="text-sm text-gray-500 font-normal">/day</span></p>
                     </div>
-                    <a href="bike-detail.html" class="bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-bold py-2 px-6 rounded-full hover:bg-secondary dark:hover:bg-secondary hover:text-black dark:hover:text-black transition uppercase text-xs tracking-wider">Book Now</a>
+                    <a href="bike-detail.html" class="bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-bold py-2 px-6 rounded-full hover:bg-secondary dark:hover:bg-secondary hover:text-black dark:hover:text-black transition uppercase text-xs tracking-wider ">Book Now</a>
                 </div>
             </div>
 
@@ -264,7 +259,7 @@
                         <p class="text-xs text-gray-500 uppercase font-bold">Starting at</p>
                         <p class="text-xl font-extrabold text-primary">$35<span class="text-sm text-gray-500 font-normal">/day</span></p>
                     </div>
-                    <a href="bike-detail.html" class="bg-primary text-white font-bold py-2 px-6 rounded-full hover:bg-green-700 transition uppercase text-xs tracking-wider shadow-md">Book Now</a>
+                    <a href="bike-detail.html" class="bg-primary text-white font-bold py-2 px-6 rounded-full hover:bg-green-700 transition uppercase text-xs tracking-wider shadow-md ">Book Now</a>
                 </div>
             </div>
 
@@ -287,7 +282,7 @@
                         <p class="text-xs text-gray-500 uppercase font-bold">Starting at</p>
                         <p class="text-xl font-extrabold text-primary">$25<span class="text-sm text-gray-500 font-normal">/day</span></p>
                     </div>
-                    <a href="bike-detail.html" class="bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-bold py-2 px-6 rounded-full hover:bg-secondary dark:hover:bg-secondary hover:text-black dark:hover:text-black transition uppercase text-xs tracking-wider">Book Now</a>
+                    <a href="bike-detail.html" class="bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-bold py-2 px-6 rounded-full hover:bg-secondary dark:hover:bg-secondary hover:text-black dark:hover:text-black transition uppercase text-xs tracking-wider ">Book Now</a>
                 </div>
             </div>
             
@@ -379,11 +374,13 @@
                 <p class="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">Make it a family outing. We offer a limited supply of high-quality child seats and cargo trailers that securely attach to our standard City Cruisers and E-Bikes.</p>
                 
                 <ul class="space-y-4 mb-8">
-                    <li class="flex items-center text-gray-700 dark:text-gray-300 font-medium">
-                        <i class="fas fa-plus-circle text-primary mr-3"></i> Rear Child Seats (Up to 40 lbs) <span class="ml-auto text-sm text-gray-500">+$5/day</span>
+                                        <li class="flex items-start justify-between text-gray-700 dark:text-gray-300 font-medium">
+                        <div class="flex items-start"><i class="fas fa-plus-circle text-primary mr-3 mt-1 flex-shrink-0"></i> <span>Rear Child Seats (Up to 40 lbs)</span></div>
+                        <span class="text-sm text-gray-500 ml-4 mt-1 whitespace-nowrap">+/day</span>
                     </li>
-                    <li class="flex items-center text-gray-700 dark:text-gray-300 font-medium">
-                        <i class="fas fa-plus-circle text-primary mr-3"></i> Double Cargo Trailers <span class="ml-auto text-sm text-gray-500">+$15/day</span>
+                                        <li class="flex items-start justify-between text-gray-700 dark:text-gray-300 font-medium">
+                        <div class="flex items-start"><i class="fas fa-plus-circle text-primary mr-3 mt-1 flex-shrink-0"></i> <span>Double Cargo Trailers</span></div>
+                        <span class="text-sm text-gray-500 ml-4 mt-1 whitespace-nowrap">+/day</span>
                     </li>
                 </ul>
                 
@@ -395,10 +392,7 @@
 
 <!-- Section 6: Final CTA / Bulk Rentals -->
 <section class="py-24 bg-primary text-center relative border-t-4 border-secondary">
-    <div class="fixed top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
-        <i class="fas fa-bicycle text-9xl absolute -top-10 -left-10 transform -rotate-12"></i>
-        <i class="fas fa-bicycle text-9xl absolute bottom-10 right-10 transform rotate-12"></i>
-    </div>
+    
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Ready to Reserve Your Ride?</h2>
         <p class="text-green-100 text-lg mb-10">Sign in to manage your bookings, or create a new account to hit the streets in minutes.</p>
@@ -534,6 +528,12 @@
 
 </body>
 </html>
+
+
+
+
+
+
 
 
 
