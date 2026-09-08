@@ -27,7 +27,7 @@
     <!-- Top Header -->
         <header class="h-16 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 flex items-center justify-between px-3 sm:px-6 z-20 flex-shrink-0 transition-colors">
         <div class="flex items-center gap-2 sm:gap-4">
-            <button id="mobile-menu-btn" class="md:hidden text-gray-700 dark:text-gray-300 p-2 focus:outline-none">
+            <button id="mobile-menu-btn" class="lg:hidden text-gray-700 dark:text-gray-300 p-2 focus:outline-none">
                 <i class="fas fa-bars text-lg"></i>
             </button>
             <a href="index.html" class="flex items-center gap-1 sm:gap-2">
@@ -57,10 +57,10 @@
     <!-- Main Layout -->
     <div class="flex flex-1 overflow-hidden">
         <!-- Sidebar -->
-        <aside id="dashboard-sidebar" class="w-56 lg:w-64 bg-gray-50 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 flex flex-col justify-between py-6 fixed md:relative top-0 left-0 z-50 md:z-0 h-full shadow-2xl md:shadow-none transform -translate-x-full md:translate-x-0 transition-transform duration-300">
+        <aside id="dashboard-sidebar" class="w-56 lg:w-64 bg-gray-50 dark:bg-gray-900 border-r border-gray-200 dark:border-gray-800 flex flex-col justify-between py-6 fixed lg:relative top-0 left-0 z-50 lg:z-0 h-full shadow-2xl lg:shadow-none transform -translate-x-full lg:translate-x-0 transition-transform duration-300">
             <div class="pr-4">
                 <!-- Mobile Logo in Sidebar -->
-                <div class="md:hidden flex items-center justify-between px-4 mt-2 mb-6 border-b border-gray-200 dark:border-gray-800 pb-4">
+                <div class="lg:hidden flex items-center justify-between px-4 mt-2 mb-6 border-b border-gray-200 dark:border-gray-800 pb-4">
                     <div class="flex items-center gap-1.5 flex-shrink-0">
                         <i class="fas fa-bicycle text-secondary text-xl"></i>
                         <span class="text-lg font-bold tracking-wider text-gray-900 dark:text-white uppercase">URBAN<span class="text-secondary">RIDE</span></span>
@@ -335,7 +335,7 @@
         });
     </script>
     <!-- Mobile Sidebar Overlay -->
-    <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden md:hidden"></div>
+    <div id="sidebar-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden lg:hidden"></div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const btn = document.getElementById('mobile-menu-btn');
