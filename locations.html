@@ -221,51 +221,217 @@
         </div>
     </div>
 </section>
+<!-- ==========================================
+     SECTION 2: CITY-WIDE COVERAGE
+=========================================== -->
+<section class="py-16 md:py-20 bg-gray-50 dark:bg-gray-800 transition-colors border-b border-gray-200 dark:border-gray-700">
 
-<!-- Section 2: Interactive Map Placeholder / Stats -->
-<section class="py-12 bg-gray-50 dark:bg-gray-800 transition-colors border-b border-gray-200 dark:border-gray-700">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-white dark:bg-gray-900 rounded-[2rem] p-6 shadow-sm border border-gray-100 dark:border-gray-700 flex flex-col lg:flex-row items-center gap-8 transform -translate-y-20 relative z-20">
-            <!-- Mock Map Area -->
-            <div class="w-full lg:w-2/3 h-64 md:h-96 bg-gray-200 dark:bg-gray-800 rounded-2xl relative overflow-hidden flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-600 group cursor-pointer hover:border-primary transition">
-                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 transition duration-500" alt="City Map Concept">
-                <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition duration-500"></div>
-                
-                <!-- Map Pins -->
-                <div class="absolute top-1/4 left-1/4 w-4 h-4 bg-secondary rounded-full border-2 border-white shadow-lg animate-bounce"></div>
-                <div class="absolute top-1/2 left-1/2 w-6 h-6 bg-primary rounded-full border-2 border-white shadow-lg animate-bounce" style="animation-delay: 0.2s"></div>
-                <div class="absolute bottom-1/3 right-1/4 w-4 h-4 bg-secondary rounded-full border-2 border-white shadow-lg animate-bounce" style="animation-delay: 0.4s"></div>
-                
-                <div class="relative z-10 bg-white/90 dark:bg-gray-900/90 backdrop-blur text-gray-900 dark:text-white font-bold px-6 py-3 rounded-full shadow-lg flex items-center gap-2">
-                    <i class="fas fa-map-marked-alt text-primary"></i> Open Interactive Map
-                </div>
-            </div>
-            
-            <!-- Hub Stats -->
-            <div class="w-full lg:w-1/3 space-y-6">
-                <h3 class="text-2xl font-extrabold text-gray-900 dark:text-white">City-Wide Coverage</h3>
-                <p class="text-gray-600 dark:text-gray-400 text-sm">We've strategically placed our hubs near transit stations, parks, and business districts for maximum convenience.</p>
-                
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-xl border border-gray-100 dark:border-gray-700">
-                        <p class="text-3xl font-extrabold text-primary mb-1">54</p>
-                        <p class="text-xs text-gray-500 uppercase tracking-widest font-bold">Total Hubs</p>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-xl border border-gray-100 dark:border-gray-700">
-                        <p class="text-3xl font-extrabold text-secondary mb-1">24/7</p>
-                        <p class="text-xs text-gray-500 uppercase tracking-widest font-bold">Automated Access</p>
-                    </div>
-                    <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-xl border border-gray-100 dark:border-gray-700 col-span-2 flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0"><i class="fas fa-store"></i></div>
-                        <div>
-                            <p class="text-lg font-extrabold text-gray-900 dark:text-white">5 Flagship Stores</p>
-                            <p class="text-xs text-gray-500 uppercase font-bold">With on-site mechanics</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <!-- Section Header -->
+        <div class="text-center max-w-4xl mx-auto mb-10 md:mb-12">
+
+            <!-- Eyebrow -->
+            <p class="text-sm md:text-base font-bold tracking-[0.18em] 
+                      uppercase text-secondary mb-3">
+                OUR HUB NETWORK
+            </p>
+
+            <!-- Heading -->
+            <h2 class="text-4xl md:text-5xl lg:text-[3.25rem] 
+                       font-extrabold tracking-tight 
+                       text-gray-900 dark:text-white leading-tight">
+                City-Wide Coverage
+            </h2>
+
+            <!-- Short Subtext -->
+            <p class="mt-4 text-base md:text-lg 
+                      text-gray-600 dark:text-gray-400 
+                      leading-relaxed max-w-2xl mx-auto">
+                Find our hubs conveniently located across the city.
+            </p>
+
         </div>
+
+
+        <!-- Main Map + Stats Card -->
+        <div class="bg-white dark:bg-gray-900 
+                    rounded-[2rem] p-6 md:p-8 
+                    shadow-sm 
+                    border border-gray-100 dark:border-gray-700 
+                    flex flex-col lg:flex-row 
+                    items-center gap-8">
+
+            <!-- ================= MAP AREA ================= -->
+            <div class="w-full lg:w-2/3 
+                        h-64 md:h-96 
+                        bg-gray-200 dark:bg-gray-800 
+                        rounded-2xl relative overflow-hidden 
+                        flex items-center justify-center 
+                        border-2 border-dashed 
+                        border-gray-300 dark:border-gray-600 
+                        group cursor-pointer 
+                        hover:border-primary transition">
+
+                <img 
+                    src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop"
+                    class="absolute inset-0 w-full h-full 
+                           object-cover opacity-50 
+                           grayscale group-hover:grayscale-0 
+                           transition duration-500"
+                    alt="City Map Concept"
+                >
+
+                <div class="absolute inset-0 
+                            bg-primary/10 
+                            group-hover:bg-transparent 
+                            transition duration-500">
+                </div>
+
+
+                <!-- Map Pins -->
+                <div class="absolute top-1/4 left-1/4 
+                            w-4 h-4 bg-secondary 
+                            rounded-full border-2 border-white 
+                            shadow-lg animate-bounce">
+                </div>
+
+                <div class="absolute top-1/2 left-1/2 
+                            w-6 h-6 bg-primary 
+                            rounded-full border-2 border-white 
+                            shadow-lg animate-bounce"
+                     style="animation-delay: 0.2s">
+                </div>
+
+                <div class="absolute bottom-1/3 right-1/4 
+                            w-4 h-4 bg-secondary 
+                            rounded-full border-2 border-white 
+                            shadow-lg animate-bounce"
+                     style="animation-delay: 0.4s">
+                </div>
+
+
+                <!-- Map Button -->
+                <div class="relative z-10 
+                            bg-white/90 dark:bg-gray-900/90 
+                            backdrop-blur-md 
+                            text-gray-900 dark:text-white 
+                            font-bold 
+                            px-6 py-3 rounded-full 
+                            shadow-lg 
+                            flex items-center gap-2 
+                            group-hover:scale-105 
+                            transition">
+
+                    <i class="fas fa-map-marked-alt text-primary"></i>
+
+                    <span>Open Interactive Map</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= HUB STATS ================= -->
+            <div class="w-full lg:w-1/3 space-y-6">
+
+                <div>
+                    <h3 class="text-2xl font-extrabold 
+                               text-gray-900 dark:text-white">
+                        Our Hub Network
+                    </h3>
+
+                    <p class="mt-2 text-sm 
+                              text-gray-600 dark:text-gray-400">
+                        Easy access across key city locations.
+                    </p>
+                </div>
+
+
+                <!-- Stats -->
+                <div class="grid grid-cols-2 gap-4">
+
+                    <!-- Total Hubs -->
+                    <div class="bg-gray-50 dark:bg-gray-800 
+                                p-5 rounded-xl 
+                                border border-gray-100 
+                                dark:border-gray-700">
+
+                        <p class="text-3xl font-extrabold 
+                                  text-primary mb-1">
+                            54
+                        </p>
+
+                        <p class="text-xs text-gray-500 
+                                  uppercase tracking-widest 
+                                  font-bold">
+                            Total Hubs
+                        </p>
+
+                    </div>
+
+
+                    <!-- Automated Access -->
+                    <div class="bg-gray-50 dark:bg-gray-800 
+                                p-5 rounded-xl 
+                                border border-gray-100 
+                                dark:border-gray-700">
+
+                        <p class="text-3xl font-extrabold 
+                                  text-secondary mb-1">
+                            24/7
+                        </p>
+
+                        <p class="text-xs text-gray-500 
+                                  uppercase tracking-widest 
+                                  font-bold">
+                            Automated Access
+                        </p>
+
+                    </div>
+
+
+                    <!-- Flagship Stores -->
+                    <div class="bg-gray-50 dark:bg-gray-800 
+                                p-5 rounded-xl 
+                                border border-gray-100 
+                                dark:border-gray-700 
+                                col-span-2 
+                                flex items-center gap-4">
+
+                        <div class="w-10 h-10 rounded-full 
+                                    bg-primary/10 text-primary 
+                                    flex items-center justify-center 
+                                    flex-shrink-0">
+
+                            <i class="fas fa-store"></i>
+
+                        </div>
+
+                        <div>
+
+                            <p class="text-lg font-extrabold 
+                                      text-gray-900 dark:text-white">
+                                5 Flagship Stores
+                            </p>
+
+                            <p class="text-xs text-gray-500 
+                                      uppercase font-bold">
+                                With on-site mechanics
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
+
 </section>
 
 <!-- Section 3: Flagship Locations Grid -->
@@ -310,7 +476,6 @@
 
             <!-- Hub 2 -->
             <div class="bg-gray-50 dark:bg-gray-800 rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 group flex flex-col h-full relative">
-                <div class="absolute -top-3 left-6 bg-secondary text-gray-900 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest z-10 shadow-md">Tour Departure Hub</div>
                 <div class="h-48 overflow-hidden relative mt-2">
                     <img src="https://images.unsplash.com/photo-1505705694340-019e1e335916?q=80&w=2064&auto=format&fit=crop" class="object-cover w-full h-full transform group-hover:scale-105 transition duration-500" alt="Coastal Hub">
                     <div class="absolute top-4 right-4 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
